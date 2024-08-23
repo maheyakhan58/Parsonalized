@@ -1,0 +1,126 @@
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    border-bottom: 8px solid #ff758c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+/* Main content styles */
+main {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff758c;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    margin: 20px 0;
+    border: 3px solid #ff758c;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ff4977;
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff758c 0%, #ff6a88 100%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff6a88 0%, #ff4977 100%);
+    transform: translateY(-2px);
+}
+
+#output {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #ff4977;
+    padding: 30px;
+    background: #fff3f3;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-height: 50px;
+    line-height: 1.5;
+}
+
+#output:empty {
+    display: none;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 8px solid #ff758c;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#output {
+    animation: fadeIn 1s ease-in-out;
+}
